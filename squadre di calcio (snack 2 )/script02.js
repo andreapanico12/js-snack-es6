@@ -55,7 +55,7 @@ const nazionaliNomiFalli = [];
 
 
 
-for (const nazionale of nazionaliBocciofila){
+/*for (const nazionale of nazionaliBocciofila){
   nazionale.puntiFatti = generatoreRandom(10,50);
   nazionale.falliSubiti = generatoreRandom(5,20);
 }
@@ -70,11 +70,22 @@ for (const nazionale of nazionaliBocciofila){
   })
 }
 
- console.log(nazionaliNomiFalli)
+ console.log(nazionaliNomiFalli)*/
+
+ //IL CICLO E' LO STESSO BASTA SCRIVERE COME SOTTO.
 
 
+ for (const nazionale of nazionaliBocciofila){
+  nazionale.puntiFatti = generatoreRandom(10,50);
+  nazionale.falliSubiti = generatoreRandom(5,20);
+  nazionaliNomiFalli.push({
+    nome: nazionale.nome,
+    falliSubiti: nazionale.falliSubiti
+  })
+}
 
-
+console.log(nazionaliBocciofila)
+console.log(nazionaliNomiFalli)
 
 
 
