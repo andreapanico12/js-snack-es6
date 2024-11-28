@@ -21,11 +21,21 @@ const arraynomi = ["alfredo", "giancarlo", "giovanni", "giordano", "bruno", "fra
 
 console.log(intervalloArray(arraynomi,0,5))
 
+// In questo modo però restituisce i valori in maniera inversa.
 
-
-function intervalloArray (array,numA,numB){
+/*function intervalloArray (array,numA,numB){
   arrayIntervallo = [];
   for (let i = numB-1; i > numA; i--){
+    arrayIntervallo.push(array[i]);
+  }
+  return arrayIntervallo
+}*/
+
+// Questo è il metodo più corretto.
+
+function intervalloArray (array,numA,numB){
+  arrayIntervallo = []
+  for (let i = numA+1; i < numB; i++){
     arrayIntervallo.push(array[i]);
   }
   return arrayIntervallo
